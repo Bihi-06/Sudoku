@@ -3,7 +3,7 @@ package Sudoku;
 /*************************************************************************
  *  Compilation:  javac SET.java
  *  Execution:    java SET
- *  
+ *
  *  Symbol table implementation using Java's HashMap library.
  *  Does not allow duplicates.
  *
@@ -24,6 +24,7 @@ public class SET<Key> implements Iterable<Key> {
     public boolean contains(Key key)  { return st.contains(key);   }
     public void remove(Key key)       { st.remove(key);            }
     public int size()                 { return st.size();          }
+    public boolean isEmpty()          { return st.isEmpty();       }
     public Iterator<Key> iterator()   { return st.iterator();      }
 
 

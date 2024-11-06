@@ -3,7 +3,7 @@ package Sudoku;
 /*************************************************************************
  *  Compilation:  javac ST.java
  *  Execution:    java ST
- *  
+ *
  *  Symbol table implementation using Java's java.util.TreeMap library.
  *  Does not allow duplicates.
  *
@@ -33,6 +33,10 @@ public class ST<Key extends Comparable<Key>, Val> implements Iterable<Key> {
     public boolean contains(Key key)    { return st.containsKey(key);    }
     public int size()                   { return st.size();              }
     public Iterator<Key> iterator()     { return st.keySet().iterator(); }
+
+    public Iterable<Key> keys() {
+        return st.keySet();
+    }
 
 
 }
